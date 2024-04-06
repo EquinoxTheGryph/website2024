@@ -1,3 +1,4 @@
+import { base } from '$app/paths';
 import type { UserLink } from '$components/UserLinkView.svelte';
 import { mdiBullhorn, mdiCamera, mdiGithub, mdiHome, mdiImageMultiple, mdiMastodon } from '@mdi/js';
 import type { NavLink } from '../routes/+layout.svelte';
@@ -57,7 +58,7 @@ export const config = {
     navLinks: [
         {
             name: 'Home',
-            url: '/',
+            url: `${base}/`,
             icon: mdiHome
         }
         // {
