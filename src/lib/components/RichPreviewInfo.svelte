@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from '$app/paths';
     import { config } from '$lib/config';
 
     export let title: string = config.openGraph.title;
@@ -20,11 +21,7 @@
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <link
-        rel="shortcut icon"
-        href={new URL('/static/favicon.ico', import.meta.url).href}
-        type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="{base}/images/icon.png" type="image/x-icon" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />

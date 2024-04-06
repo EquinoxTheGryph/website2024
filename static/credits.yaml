@@ -8,5 +8,3 @@ fonts:
 technologies:
   sveltekit: https://kit.svelte.dev
   tailwindcss: https://tailwindcss.com
-  docker: https://www.docker.com
-  caddy: https://caddyserver.com
