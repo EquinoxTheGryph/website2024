@@ -164,7 +164,7 @@ export const config = {
         },
         {
             name: 'Characters',
-            url: '/characters',
+            url: `${base}/characters`,
             icon: mdiAccount
         }
         // {
