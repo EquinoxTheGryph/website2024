@@ -4,7 +4,6 @@
     export let color: Nullable<string> = null;
     export let title = '';
 
-    // size
     if (Number(size)) size = Number(size);
 
     const getStyles = (size: number) => {

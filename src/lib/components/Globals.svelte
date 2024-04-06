@@ -1,1 +1,1 @@
-hello
+<!-- Add any global components here -->
