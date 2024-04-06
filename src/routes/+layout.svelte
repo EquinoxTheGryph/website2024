@@ -4,6 +4,7 @@
     import Globals from '$components/Globals.svelte';
     import Icon from '$components/Icon.svelte';
     import { config } from '$lib/config';
+    import { base } from '$app/paths';
 
     export interface NavLink {
         name: string;
@@ -23,7 +24,7 @@
     >
         <ul class="flex h-full items-center">
             <li>
-                <a href="/" class="p-2 hover:text-secondary">Equi.rocks</a>
+                <a href="{base}/" class="p-2 hover:text-secondary">Equi.rocks</a>
             </li>
             {#each config.navLinks as navItem}
                 <li>
@@ -48,7 +49,7 @@
 <!-- Footer -->
 <footer class="flex h-footer w-full items-center justify-center bg-secondary-dark p-5">
     <div class="p-2 {showNavBar ? 'text-right' : 'text-center'}">
-        <p><a href="/" class=" hover:text-secondary">equi.rocks</a></p>
+        <p><a href="{base}/" class=" hover:text-secondary">equi.rocks</a></p>
         <p class="text-xs italic opacity-70">
             A web page by Equinox the gryph, ©{new Date().getFullYear()}
         </p>
