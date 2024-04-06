@@ -51,7 +51,7 @@ export const config = {
     images: {
         icon: {
             alt: 'A headshot drawing of Equinox The Gryphon',
-            src: '/images/icon.png'
+            src: new URL('/static/images/icon.png', import.meta.url).href
         }
     } satisfies Record<string, { src: string; alt: string }>,
     navLinks: [
