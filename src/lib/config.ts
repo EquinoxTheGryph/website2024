@@ -119,7 +119,7 @@ export const config = {
     },
     title: 'Equinox the Gryphon',
     description: 'Programmer and sometimes an artist',
-    age: 24,
+    age: 25,
     pronouns: 'He/Him',
     nationality: 'Dutch',
     relMe: 'https://squawk.social/@Equinox',
