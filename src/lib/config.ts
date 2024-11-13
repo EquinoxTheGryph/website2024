@@ -107,7 +107,7 @@ const images = {
             name: 'ThlaylisDen',
             url: 'https://thlaylisden.wixsite.com/thlaylisden'
         },
-        url: 'https://www.youtube.com/watch?v=RqCvd7TJxnA',
+        url: 'https://www.furaffinity.net/view/57617541/',
         title: 'Asterion',
         subtitle: 'Draft horse / Blue jay hippogryph || He / Him',
         description:
