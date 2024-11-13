@@ -4,6 +4,7 @@ import type { UserLink } from '$components/UserLinkView.svelte';
 import {
     mdiAccount,
     mdiBullhorn,
+    mdiButterfly,
     mdiCamera,
     mdiGithub,
     mdiHome,
@@ -31,7 +32,7 @@ const images = {
     // Art
     charEquinox: {
         src: image('art/Funa-Equinox-Fullbody.png'),
-        alt: '',
+        alt: "A headshot of Equinox the gryphon looking happy, like a cat who's very eager to see you. I think he wants to get pets!",
         artist: {
             name: 'Funa',
             url: 'https://twitter.com/funa_des'
@@ -46,7 +47,10 @@ const images = {
     },
     charSolstice: {
         src: image('art/Funa-Solstice-and-Andromeda-Scene-edited.png'),
-        alt: '',
+        alt:
+            'Solstice (A lilac colored, snow leopard themed gryphon) and Andromeda ' +
+            "(A purple and white gryphon) having a tea party in Andromeda's tree house. " +
+            'In the middle is a tree, decorated with string lights. Only Solstice is in view of the image.',
         artist: {
             name: 'Funa',
             url: 'https://twitter.com/funa_des'
@@ -61,7 +65,7 @@ const images = {
     },
     charRask: {
         src: image('art/Fulpelt-Rask-YCH.png'),
-        alt: '',
+        alt: 'Rask the gryphon running, he looks quite determined.',
         artist: {
             name: 'Fulpelt',
             url: 'https://www.furaffinity.net/user/fulpelt'
@@ -93,19 +97,23 @@ const images = {
             'They are somewhat preoccupied, but is very friendly regardless.'
     },
     charAsterion: {
-        src: image('art/WIP.png'),
-        alt: 'Work in progress',
-        // artist: {
-        //     name: 'NONE',
-        //     url: 'NONE'
-        // },
+        src: image('art/ThlaylisDen - Asterion Refsheet v1.1 Edit.png'),
+        alt:
+            'Reference sheet of Asterion, the blue jay/draft horse hippogryph, featuring a side view of the character. ' +
+            'His design is themed around music. He has a musical staff as a bandana like tattoo, ' +
+            "as well as a treble clef tattoo on his arm. He's wearing a bag containing scrolls of music sheets. " +
+            'A lute sits on the side, a guitar-like musical instrument he plays. He has gold-colored horseshoes.',
+        artist: {
+            name: 'ThlaylisDen',
+            url: 'https://thlaylisden.wixsite.com/thlaylisden'
+        },
         url: 'https://www.youtube.com/watch?v=RqCvd7TJxnA',
         title: 'Asterion',
         subtitle: 'Draft horse / Blue jay hippogryph || He / Him',
         description:
-            '(WIP) Asterion is a friendly (but somewhat shy) and very musically inspired ' +
-            'hippogryph who works as a royal bard. He specializes in singing and can play ' +
-            'a variety of instruments, primarily a lute.'
+            'As a royal bard, his job involves playing the lute in the city halls. ' +
+            'In his free time, he enjoys writing music and improving his skills. ' +
+            'He tends to be quite shy, but otherwise loves to chat!'
     }
 } satisfies Record<string, ArtData>;
 
@@ -129,6 +137,12 @@ export const config = {
             title: 'Social Media',
             content: 'Mastodon',
             icon: mdiMastodon
+        },
+        {
+            url: 'https://bsky.app/profile/equi.rocks',
+            title: 'Social Media',
+            content: 'Bluesky',
+            icon: mdiButterfly
         },
         {
             url: 'https://www.furaffinity.net/user/aphelion1',
