@@ -7,7 +7,9 @@
     export let flip = false;
 </script>
 
-<section class="flex max-w-[60ch] items-center {flip ? 'flex-col' : 'flex-col-reverse'} sm:flex-row">
+<section
+    class="flex max-w-[60ch] items-center {flip ? 'flex-col' : 'flex-col-reverse'} sm:flex-row"
+>
     {#if flip}
         <div class="h-full flex-shrink-0">
             <Art {image} width="10em" height="10em" />

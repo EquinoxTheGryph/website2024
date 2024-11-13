@@ -20,7 +20,7 @@ const config = {
         alias: {
             $static: 'static',
             $components: 'src/lib/components' // A library of reusable Svelte components
-        },
+        }
     }
 };
 
