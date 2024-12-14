@@ -1,16 +1,16 @@
 <script lang="ts">
-    import type { Button } from '../../buttons/Buttons';
+    import type { Button } from '../Buttons';
 
     export let value: Button;
 </script>
 
 {#if value.url}
     <a href={value.url} class="button">
-        <img class="button-img" src={value.img.href} alt="" />
+        <img class="button-img" src={value.img} alt="" />
     </a>
 {:else}
     <div class="button">
-        <img class="button-img" src={value.img.href} alt="" />
+        <img class="button-img" src={value.img} alt="" />
     </div>
 {/if}
 

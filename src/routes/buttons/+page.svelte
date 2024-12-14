@@ -1,6 +1,6 @@
 <script>
     import Button88x31 from '$components/Button88x31.svelte';
-    import { buttons } from '../../buttons/Buttons';
+    import { buttons } from '../../lib/Buttons';
 </script>
 
 <article class="flex flex-col items-center p-10">
@@ -15,7 +15,7 @@
     <Button88x31
         value={{
             url: '/images/EquiRocks88x31.gif',
-            img: new URL('/images/EquiRocks88x31.gif', import.meta.url)
+            img: '/images/EquiRocks88x31.gif'
         }}
     />
 </article>
