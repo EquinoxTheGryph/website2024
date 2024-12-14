@@ -5,6 +5,7 @@ import {
     mdiAccount,
     mdiBullhorn,
     mdiButterfly,
+    mdiButtonCursor,
     mdiCamera,
     mdiGithub,
     mdiHome,
@@ -180,6 +181,11 @@ export const config = {
             name: 'Characters',
             url: `${base}/characters`,
             icon: mdiAccount
+        },
+        {
+            name: 'Buttons',
+            url: '/buttons',
+            icon: mdiButtonCursor
         }
         // {
         //     name: 'Stuff',

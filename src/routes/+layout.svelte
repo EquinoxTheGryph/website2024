@@ -73,10 +73,11 @@
         {#each config.navLinks as navItem}
             <a
                 href={navItem.url}
-                class={'flex flex-grow justify-center hover:text-secondary ' +
+                class={'flex flex-grow flex-col items-center justify-center hover:text-secondary ' +
                     ($page.url.pathname == navItem.url ? 'text-secondary' : '')}
             >
                 <Icon path={navItem.icon} />
+                {navItem.name}
             </a>
         {/each}
     </nav>
