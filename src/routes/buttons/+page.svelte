@@ -4,7 +4,7 @@
     export let data;
 </script>
 
-<article class="flex flex-col items-center p-10">
+<article class="flex flex-col items-center p-10 overflow-clip">
     <h1 class="c-text">Buttons!</h1>
     <p class="c-text text-center">
         Some random buttons I have collected over a period of time. <br />
