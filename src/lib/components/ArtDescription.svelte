@@ -1,5 +1,7 @@
 <script lang="ts">
+    import { mdiImageSearchOutline } from '@mdi/js';
     import type { ArtData } from './Art.svelte';
+    import Icon from './Icon.svelte';
 
     export let image: ArtData;
     export let align: 'left' | 'right' | 'center' = 'left';
@@ -7,7 +9,15 @@
 
 <section class="prose max-w-full p-2 text-{align}">
     {#if image.title}
-        <h2 class="mb-1 mt-0 text-4xl">{image.title}</h2>
+        <!-- prettier-ignore -->
+        <h2 class="mb-1 mt-0 text-4xl">
+            {image.title}{#if image.refUrl}&nbsp;<a
+                    href={image.refUrl}
+                    title="Link to this character's refsheet"
+                >
+                    <Icon path={mdiImageSearchOutline} class="inline" />
+                </a>{/if}
+        </h2>
     {/if}
     {#if image.subtitle}
         <p class="m-0">

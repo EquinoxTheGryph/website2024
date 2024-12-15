@@ -4,6 +4,7 @@
         alt?: string;
         artist?: string | { url: string; name: string };
         url?: string;
+        refUrl?: string;
         title?: string;
         description?: string;
         subtitle?: string;

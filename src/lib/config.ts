@@ -39,6 +39,7 @@ const images = {
             url: 'https://twitter.com/funa_des'
         },
         url: 'https://www.furaffinity.net/view/41715048/',
+        refUrl: 'https://www.furaffinity.net/view/41005918/',
         title: 'Equinox',
         subtitle: 'Mountain lion / Red tailed hawk gryphon || He / Him',
         description:
@@ -57,6 +58,7 @@ const images = {
             url: 'https://twitter.com/funa_des'
         },
         url: 'https://www.furaffinity.net/view/51111396/',
+        refUrl: 'https://www.furaffinity.net/view/42657978/',
         title: 'Solstice',
         subtitle: 'Snow leopard / Red tailed hawk gryphon || She / Her',
         description:
@@ -72,6 +74,7 @@ const images = {
             url: 'https://www.furaffinity.net/user/fulpelt'
         },
         url: 'https://www.furaffinity.net/view/43444504/',
+        refUrl: 'https://www.furaffinity.net/view/48774635/',
         title: 'Rask',
         subtitle: "Mountain lion / Steller's jay inspired Hawk gryphon || He / Him",
         description:
@@ -88,6 +91,7 @@ const images = {
             url: 'https://twitter.com/Blajnart'
         },
         url: 'https://www.furaffinity.net/view/47031201/',
+        refUrl: 'https://www.furaffinity.net/view/47031201/',
         title: 'Takora',
         subtitle: 'Lion / Bearded vulture / Phoenix gryphon || They / Them',
         description:
@@ -109,6 +113,7 @@ const images = {
             url: 'https://thlaylisden.wixsite.com/thlaylisden'
         },
         url: 'https://www.furaffinity.net/view/57617541/',
+        refUrl: 'https://www.furaffinity.net/view/48774635/',
         title: 'Asterion',
         subtitle: 'Draft horse / Blue jay hippogryph || He / Him',
         description:

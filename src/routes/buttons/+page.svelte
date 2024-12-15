@@ -7,8 +7,8 @@
 <article class="flex flex-col items-center p-10">
     <h1 class="c-text">Buttons!</h1>
     <p class="c-text text-center">
-        Some random buttons I have collected over a period of time. These are not in any particular
-        order.
+        Some random buttons I have collected over a period of time. <br />
+        These are not in any particular order.
     </p>
     <div class="m-5 flex max-w-[40em] flex-wrap justify-center gap-2">
         {#each data.buttons as button}
@@ -17,7 +17,7 @@
     </div>
 
     <h2 class="c-text">Feel free to use mine!</h2>
-    <p class="c-text text-center mb-3">
+    <p class="c-text mb-3 text-center">
         Featuring various art pieces found on my <a
             href="https://www.furaffinity.net/gallery/aphelion1"
         >

@@ -1,12 +1,14 @@
 <script lang="ts">
     export let path: string;
-    export let size = 1;
+    export let size: number | string = 1;
     export let color: Nullable<string> = null;
     export let title = '';
+    let css = '';
+    export { css as class };
 
     if (Number(size)) size = Number(size);
 
-    const getStyles = (size: number) => {
+    const getStyles = (size: number | string) => {
         const styles = [];
 
         if (size !== null) {
@@ -25,7 +27,7 @@
     $: style = getStyles(size);
 </script>
 
-<svg viewBox="0 0 24 24" {style}>
+<svg viewBox="0 0 24 24" {style} class={css}>
     {#if title}<title>{title}</title>{/if}
     <path d={path}></path>
 </svg>
