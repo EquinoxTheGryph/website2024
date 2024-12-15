@@ -10,5 +10,9 @@
     "Gabu.png": "https://gabu.dog",
     "Krita.png": "https://krita.org",
     "NixOS.png": "https://nixos.org",
-    "Svelte.png": "https://svelte.dev"
+    "Svelte.png": "https://svelte.dev",
+    "KeePassXC.png": "https://keepassxc.org",
+    "NoNFT.gif": "https://www.web3isgoinggreat.com",
+    "ZClickHere.gif": "javascript:(function(){['','-ms-','-webkit-','-o-','-moz-'].map(function(pfx){Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(function(el){el.style[pfx+'transform']='rotate(' + (Math.floor(Math.random() * 3) - 1) + 'deg)';});});}())",
+    "Backrooms.gif": "https://en.wikipedia.org/wiki/The_Backrooms"
 }
