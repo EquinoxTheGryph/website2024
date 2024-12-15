@@ -1,17 +1,25 @@
+import _linkData from '../../static/images/buttons/__links.json';
+
+const imageModules = import.meta.glob(
+    ['/static/images/buttons/*', '!/static/images/buttons/*.json'],
+    {
+        eager: true,
+        import: 'default',
+        query: '?url&no-inline'
+    }
+);
+
 export interface Button {
     url?: string;
     img: string;
 }
 
-function _btn(img: string, url?: string) {
-    return { img: '/images/buttons/' + img, url };
-}
+export const buttons: Button[] = Object.keys(imageModules).map((imageUrl) => {
+    const _fileName = imageUrl.replace(/^.*\//g, '');
+    const _url = _linkData[_fileName as keyof typeof _linkData];
 
-export const buttons: Button[] = [
-    _btn('hexaitos.png', 'https://hexaitos.com'),
-    _btn('soatok.png', 'https://soatok.blog'),
-    _btn('therian.png'),
-    _btn('vinesauce.png', 'https://www.twitch.tv/vinesauce'),
-    _btn('volpeon.svg', 'https://volpeon.ink'),
-    _btn('xenia_trans.gif', 'https://www.linux.org')
-];
+    return {
+        img: '/images/buttons/' + _fileName,
+        ...(_url ? { url: _url } : {})
+    };
+});
